@@ -22,7 +22,7 @@ Actual: any arguments alter the global task hash
 3. Run the test command once:
 
    ```sh
-   npx turbo test -- --one
+   npx turbo test -- one.ts
    ```
 
    `build` has cache miss as there is no cache yet (correct).
@@ -30,7 +30,7 @@ Actual: any arguments alter the global task hash
 4. Run the test command again with a different argument:
 
    ```sh
-   npx turbo test -- --two
+   npx turbo test -- two.ts
    ```
 
    The `build` task has a cache miss (not expected) even though it didn't receive any arguments (expected):
