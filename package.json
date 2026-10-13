@@ -7,6 +7,6 @@
     "test": "node -e 'console.log(\"[test] Received args:\", JSON.stringify(process.argv.slice(1)))' --"
   },
   "devDependencies": {
-    "turbo": "latest"
+    "turbo": "2.11.8-canary.2"
   }
 }
